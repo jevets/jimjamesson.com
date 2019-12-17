@@ -1,0 +1,26 @@
+html { box-sizing: border-box }
+*, *::before, *::after { box-sizing: inherit }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+  line-height: 1.4;
+  font-size: 1.2rem;
+  background: #fafafa;
+}
+.container {
+  max-width: 72ch;
+  margin: 0 auto;
+  padding: 0 2ch;
+}
+.l-dark {
+  background: url(/img/bg.png) repeat-x center top;
+  color: white;
+}
+.l-dark a {
+  color: white;
+}
+main {
+  padding-bottom: 3rem;
+}

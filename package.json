@@ -1,3 +1,23 @@
 {
-    "name": "jimjamesson.com"
+  "name": "jimjamesson.com",
+  "description": "Static single page for jimjamesson.com",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "npx @11ty/eleventy build",
+    "serve": "npx @11ty/eleventy --serve",
+    "dev": "ELEVENTY_ENV=development npm run serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jevets/jimjamesson.com.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jevets/jimjamesson.com/issues"
+  },
+  "homepage": "https://github.com/jevets/jimjamesson.com#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.9.0",
+    "clean-css": "^4.2.1"
+  }
 }

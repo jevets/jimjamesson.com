@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>{{ author.name }}, {{ author.title }}</title>
+  {% set css %}{% include "global.css" %}{% endset %}
+  <style>{{ css | cssmin }}</style>
+</head>
+<body>
+  <header class="site-header l-dark" style="padding: 2rem 0">
+    <div class="container">
+      <div style="font-weight: bold; font-size: 2rem;">{{ author.name }}</div>
+      <div style="font-size: 1rem;">
+        {{ author.title }}
+        -
+        <a href="tel:{{ author.phone }}">{{ author.phone }}</a>
+        -
+        <a href="mailto:{{ author.email }}">{{ author.email }}</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="site-main">
+    {{ content | safe }}
+  </main>
+
+  <footer class="site-footer l-dark" style="padding: 2rem 0; text-align: center; font-size: smaller;">
+    <div class="container">
+      Site contents &copy; {{ site.copyrightDate }} {{ author.name }}
+    </div>
+  </footer>
+</body>
+</html>
