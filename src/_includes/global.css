@@ -24,3 +24,11 @@ body {
 main {
   padding-bottom: 3rem;
 }
+.intro .container {
+  display: flex;
+  justify-content: space-around;
+  width: 200ch;
+}
+.intro .container > div {
+  width: 33%;
+}

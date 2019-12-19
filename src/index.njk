@@ -9,7 +9,7 @@ services:
   - Illustrations
   - Patent Drawings
 background:
-  - 40 plus years experience in mechanical design
+  - 50 plus years experience in mechanical design
   - Results oriented; have led three engineering departments
   - Detail minded with an eye for hidden problems
   - Designed castings, molded plastics, sheet metal, extrusions, weldments, machined parts
@@ -173,12 +173,6 @@ products:
 <section class="portfolio">
   <div class="container">
     <h2>Product Design Portfolio</h2>
-
-    <nav>
-      {% for item in products %}
-        <a href="#{{ item.title | slug }}">{{ item.title }}</a>
-      {% endfor %}
-    </nav>
 
     {% for category in products %}
       <h3 id="{{ category.title | slug }}">{{ category.title }}</h3>
