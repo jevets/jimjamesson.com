@@ -13,137 +13,6 @@ background:
   - Results oriented; have led three engineering departments
   - Detail minded with an eye for hidden problems
   - Designed castings, molded plastics, sheet metal, extrusions, weldments, machined parts
-products:
-  - title: Arm Board
-    products:
-      - img: ARM-BOARD-SKETCH.jpg
-        title: Arm Board Sketch
-      - img: arm-board-rendered.jpg
-        title: Arm Board Rendering
-      - img: arm-board-cover-molds.jpg
-        title: Arm Board Cover Molds
-      - img: armboard-on-chair.jpg
-        title: Arm Board on Chair
-  - title: Assembly Drawings
-    products:
-      - img: ASSEMBLY-LED-EXAM-LIGHT.jpg
-        title: Assembly LED Exam Light
-      - img: Exploded-assembly-drawing.jpg
-        title: Exploded assembly drawing
-      - img: PC-Board-Drawing.jpg
-        title: PC Board Drawing
-      - img: Assembly-Chair-Back.jpg
-        title: Assembly Chair Back
-  - title: Banking Equipment
-    products:
-      - img: Drive-up-Banking.jpg
-        title: Drive Up Banking
-      - img: Safe-for-NCR-ATM.jpg
-        title: Safe for NCR ATM
-      - img: Concrete-filled-vault-door.jpg
-        title: Concrete-filled Vault Door
-      - img: drive-up-window.jpg
-        title: Drive-Up Window
-  - title: Castings/Molds
-    products:
-      - img: Stem-Casting.jpg
-        title: Stem Casting
-      - img: control-cover-mold.jpg
-        title: Control Cover Mold
-      - img: back-cover-mold.jpg
-        title: Back Cover Mold
-  - title: Chairs
-    products:
-      - img: Surgichair.jpg
-        title: Surgichair
-      - img: stretchair.jpg
-        title: Stretchair
-      - img: Orthodontic-chair.jpg
-        title: Orthodontic Chair
-      - img: Surgery-Chair.jpg
-        title: Surgery Chair
-  - title: Lighting
-    products:
-      - img: exam-light.jpg
-        title: Exam Light
-      - img: housing-detail.jpg
-        title: Housing Detail
-      - img: rendered-light-housing.jpg
-        title: Rendered Light Housing
-      - img: LIGHT-SHROUD.jpg
-        title: Light Shroud
-  - title: Machined Parts
-    products:
-      - img: Release-mechanism-body.jpg
-        title: Release Mechanism Body
-      - img: Housing.jpg
-        title: Housing
-      - img: Sprocket.jpg
-        title: Sprocket
-      - img: Wood-Support.jpg
-        title: Wood Support
-  - title: Molded Plastics
-    products:
-      - img: Switch-Actuator.jpg
-        title: Switch Actuator
-      - img: Alarm-housing.jpg
-        title: Alarm Housing
-      - img: foot-pedal-corrected.jpg
-        title: Foot Pedal
-  - title: Operator/Technical Manuals
-    products:
-      - img: Labeling-I.D.-drawing.jpg
-        title: Labeling ID Drawing
-      - img: Battery-Replacement.jpg
-        title: Battery Replacement
-      - img: PSP-Chair.jpg
-        title: PSP Chair
-      - img: WIRING-DIAGRAM.jpg
-        title: Wiring Diagram
-  - title: Patent Drawings/Illustrations
-    products:
-      - img: pressure-nozzle.jpg
-        title: Pressure Nozzle
-      - img: industrial-washer.jpg
-        title: Industrial Washer
-      - img: patient-transfer.jpg
-        title: Patient Transfer
-      - img: floor-washer.jpg
-        title: Floor Washer
-  - title: Security
-    products:
-      - img: Alarm-System.jpg
-        title: Alarm System
-      - img: night-depository.jpg
-        title: Night Depository
-      - img: vault-door.jpg
-        title: Vault Door
-  - title: Sheet Metal Parts
-    products:
-      - img: PS3-Controller-Bracket.jpg
-        title: PS3 Controller Bracket
-      - img: Support-Pan.jpg
-        title: Support Pan
-      - img: housing-for-led-light.jpg
-        title: Housing for LED Light
-  - title: Toy Figures
-    products:
-      - img: Knight-drawing.jpg
-        title: Knight Drawing
-      - img: knight-figure.jpg
-        title: Knight Figure
-      - img: knight-figure2.jpg
-        title: Knight Figure
-      - img: soldier-drawing.jpg
-        title: Soldier Drawing
-  - title: Vacuum Formed Parts
-    products:
-      - img: Hose-Collar.jpg
-        title: Hose Collar
-      - img: Chair-Base-Cover.jpg
-        title: Chair Base Cover
-      - img: Horse-shoe-cover.jpg
-        title: Horse Shoe Cover
 ---
 
 <section class="intro">
@@ -175,12 +44,14 @@ products:
     <h2>Product Design Portfolio</h2>
 
     {% for category in products %}
+    <div style="margin-bottom: 6rem;">
       <h3 id="{{ category.title | slug }}">{{ category.title }}</h3>
+      <div style="display: flex; justify-content: flex-start; align-items: center;">
       {% for product in category.products %}
-        <a href="/img/works/full/{{ product.img }}">
-          <img src="/img/works/thumbs/{{ product.img }}" alt="{{ product.title }}">
-        </a>
+        <img src="/img/works/full/{{ product.img }}" alt="{{ product.title }}" style="border: solid 1px #ccc; margin-right: 1rem;">
       {% endfor %}
+      </div>
+    </div>
     {% endfor %}
   </div>
 </section>
