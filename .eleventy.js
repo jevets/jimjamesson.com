@@ -1,15 +1,7 @@
-require('svelte/register')()
 const CleanCSS = require('clean-css')
 
 module.exports = config => {
   config.addPassthroughCopy('src/img')
-
-  config.addTransform('html', (content, outputPath) => {
-    if (outputPath.endsWith('.html')) {
-      return require('./src/_transforms/portfolio')(content)
-    }
-    return content
-  })
 
   config.addFilter('cssmin', css => {
     return new CleanCSS({}).minify(css).styles
