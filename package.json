@@ -18,10 +18,13 @@
   "homepage": "https://github.com/jevets/jimjamesson.com#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.9.0",
+    "@tbranyen/jsdom": "^13.0.0",
     "autoprefixer": "^9.7.3",
     "clean-css": "^4.2.1",
     "postcss": "^7.0.25",
     "postcss-import": "^12.0.1",
+    "postcss-nested": "^4.2.1",
+    "svelte": "^3.16.5",
     "tailwindcss": "^1.1.4"
   }
 }

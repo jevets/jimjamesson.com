@@ -5,31 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>{{ author.name }}, {{ author.title }}</title>
-  {% set css %}{% include "global.css" %}{% endset %}
-  <style>{{ css | cssmin }}</style>
+  <link rel="stylesheet" href="/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,900&amp;display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="site-header l-dark" style="padding: 2rem 0;">
-    <div class="container">
-      <div style="font-weight: bold; font-size: 2rem;">{{ author.name }}</div>
-      <div style="font-size: 1rem;">
-        {{ author.title }}
-        -
-        <a href="tel:{{ author.phone }}">{{ author.phone }}</a>
-        -
-        <a href="mailto:{{ author.email }}">{{ author.email }}</a>
+  <header class="site-header text-center text-blue-100 py-8">
+    {% Container %}
+      <h1 class="font-black text-3xl">{{ author.name }}</h1>
+      <div class="mb-4 text-lg font-bold tracking-wide text-blue-200">{{ author.title }}</div>
+      <div>
+        <a class="mx-2 underline hover:no-underline" href="tel:{{ author.phone }}">{{ author.phone }}</a>
+        <br>
+        <a class="mx-2 underline hover:no-underline" href="mailto:{{ author.email }}">{{ author.email }}</a>
       </div>
-    </div>
+    {% endContainer %}
   </header>
 
   <main class="site-main">
     {{ content | safe }}
   </main>
 
-  <footer class="site-footer l-dark" style="padding: 2rem 0; text-align: center; font-size: smaller;">
-    <div class="container">
+  <footer class="site-footer py-8 text-xs bg-blue-100 text-blue-900 text-center">
+    {% Container %}
       Site contents &copy; {{ site.copyrightDate }} {{ author.name }}
-    </div>
+    {% endContainer %}
   </footer>
 </body>
 </html>

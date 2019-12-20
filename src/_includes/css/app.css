@@ -1,0 +1,21 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.site-header, .portfolio {
+  @apply text-blue-100;
+  background-color: rgb(48, 68, 92);
+  /* background-image: url(/img/bg-new.png); */
+  background-image: url(/img/grid.png);
+}
+
+.content {
+  @apply text-blue-900;
+  p {
+    @apply my-6;
+    @apply text-lg;
+  }
+  .lead {
+    @apply text-2xl;
+  }
+}

@@ -1,0 +1,39 @@
+---
+layout: layout
+---
+<section class="intro bg-blue-100 shadow-inner py-16">
+  {% Container %}
+    <div class="sm:flex sm:justify-between sm:items-center sm:-mx-4 sm:flex-row-reverse">
+      <div class="sm:w-2/3 md:3/4 sm:px-4">
+        <div class="content">
+          {{ content | safe }}
+        </div>
+      </div>
+      <div class="sm:w-1/3 md:1/4 sm:px-4">
+        <img src="{{ image }}" alt="" class="shadow-xl">
+      </div>
+    </div>
+  {% endContainer %}
+</section>
+
+<section class="portfolio py-8 border-t px-16 text-center">
+  {% Container %}
+    {% H2 'my-16 md:text-4xl' %}Product Design Portfolio{% endH2 %}
+    {% for category in products %}
+      <div class="mb-16">
+        {% H3 'my-6 text-2xl' %}{{ category.title }}{% endH3 %}
+        <div class="mt-4 sm:flex sm:justify-center sm:items-center">
+        {% for product in category.products %}
+          <div class="sm:w-auto sm:mr-2 mb-4">
+            <img
+              class="shadow-2xl w-full"
+              src="/img/works/full/{{ product.img }}"
+              alt="{{ product.title }}"
+            >
+          </div>
+        {% endfor %}
+        </div>
+      </div>
+    {% endfor %}
+  {% endContainer %}
+</section>

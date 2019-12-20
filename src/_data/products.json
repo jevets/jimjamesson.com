@@ -3,6 +3,10 @@
     "title": "Arm Board",
     "products": [
       {
+        "img": "armboard-on-chair.jpg",
+        "title": "Arm Board on Chair"
+      },
+      {
         "img": "ARM-BOARD-SKETCH.jpg",
         "title": "Arm Board Sketch"
       },
@@ -13,10 +17,6 @@
       {
         "img": "arm-board-cover-molds.jpg",
         "title": "Arm Board Cover Molds"
-      },
-      {
-        "img": "armboard-on-chair.jpg",
-        "title": "Arm Board on Chair"
       }
     ]
   },
@@ -83,20 +83,20 @@
     "title": "Chairs",
     "products": [
       {
-        "img": "Surgichair.jpg",
-        "title": "Surgichair"
-      },
-      {
-        "img": "stretchair.jpg",
-        "title": "Stretchair"
-      },
-      {
         "img": "Orthodontic-chair.jpg",
         "title": "Orthodontic Chair"
       },
       {
         "img": "Surgery-Chair.jpg",
         "title": "Surgery Chair"
+      },
+      {
+        "img": "Surgichair.jpg",
+        "title": "Surgichair"
+      },
+      {
+        "img": "stretchair.jpg",
+        "title": "Stretchair"
       }
     ]
   },
@@ -104,20 +104,20 @@
     "title": "Lighting",
     "products": [
       {
-        "img": "exam-light.jpg",
-        "title": "Exam Light"
-      },
-      {
-        "img": "housing-detail.jpg",
-        "title": "Housing Detail"
-      },
-      {
         "img": "rendered-light-housing.jpg",
         "title": "Rendered Light Housing"
       },
       {
         "img": "LIGHT-SHROUD.jpg",
         "title": "Light Shroud"
+      },
+      {
+        "img": "exam-light.jpg",
+        "title": "Exam Light"
+      },
+      {
+        "img": "housing-detail.jpg",
+        "title": "Housing Detail"
       }
     ]
   },
@@ -129,16 +129,16 @@
         "title": "Release Mechanism Body"
       },
       {
-        "img": "Housing.jpg",
-        "title": "Housing"
-      },
-      {
         "img": "Sprocket.jpg",
         "title": "Sprocket"
       },
       {
         "img": "Wood-Support.jpg",
         "title": "Wood Support"
+      },
+      {
+        "img": "Housing.jpg",
+        "title": "Housing"
       }
     ]
   },
@@ -146,16 +146,16 @@
     "title": "Molded Plastics",
     "products": [
       {
-        "img": "Switch-Actuator.jpg",
-        "title": "Switch Actuator"
+        "img": "foot-pedal-corrected.jpg",
+        "title": "Foot Pedal"
       },
       {
         "img": "Alarm-housing.jpg",
         "title": "Alarm Housing"
       },
       {
-        "img": "foot-pedal-corrected.jpg",
-        "title": "Foot Pedal"
+        "img": "Switch-Actuator.jpg",
+        "title": "Switch Actuator"
       }
     ]
   },
@@ -163,16 +163,16 @@
     "title": "Operator/Technical Manuals",
     "products": [
       {
-        "img": "Labeling-I.D.-drawing.jpg",
-        "title": "Labeling ID Drawing"
-      },
-      {
         "img": "Battery-Replacement.jpg",
         "title": "Battery Replacement"
       },
       {
         "img": "PSP-Chair.jpg",
         "title": "PSP Chair"
+      },
+      {
+        "img": "Labeling-I.D.-drawing.jpg",
+        "title": "Labeling ID Drawing"
       },
       {
         "img": "WIRING-DIAGRAM.jpg",
@@ -192,12 +192,12 @@
         "title": "Industrial Washer"
       },
       {
-        "img": "patient-transfer.jpg",
-        "title": "Patient Transfer"
-      },
-      {
         "img": "floor-washer.jpg",
         "title": "Floor Washer"
+      },
+      {
+        "img": "patient-transfer.jpg",
+        "title": "Patient Transfer"
       }
     ]
   },
@@ -243,16 +243,16 @@
         "title": "Knight Drawing"
       },
       {
+        "img": "soldier-drawing.jpg",
+        "title": "Soldier Drawing"
+      },
+      {
         "img": "knight-figure.jpg",
         "title": "Knight Figure"
       },
       {
         "img": "knight-figure2.jpg",
         "title": "Knight Figure"
-      },
-      {
-        "img": "soldier-drawing.jpg",
-        "title": "Soldier Drawing"
       }
     ]
   },
@@ -264,12 +264,12 @@
         "title": "Hose Collar"
       },
       {
-        "img": "Chair-Base-Cover.jpg",
-        "title": "Chair Base Cover"
-      },
-      {
         "img": "Horse-shoe-cover.jpg",
         "title": "Horse Shoe Cover"
+      },
+      {
+        "img": "Chair-Base-Cover.jpg",
+        "title": "Chair Base Cover"
       }
     ]
   }
