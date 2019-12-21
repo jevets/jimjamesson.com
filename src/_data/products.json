@@ -146,6 +146,10 @@
     "title": "Molded Plastics",
     "products": [
       {
+        "img": "dwg-77-Product-Guide.png",
+        "title": "Product Guide"
+      },
+      {
         "img": "foot-pedal-corrected.jpg",
         "title": "Foot Pedal"
       },

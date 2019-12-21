@@ -1,11 +1,7 @@
-const CleanCSS = require('clean-css')
-
 module.exports = config => {
   config.addPassthroughCopy('src/img')
 
-  config.addFilter('cssmin', css => {
-    return new CleanCSS({}).minify(css).styles
-  })
+  config.addTransform('cssmin', require('./src/_transforms/cssmin'))
 
   config.addPairedShortcode('Container', (content) => `
     <div class="container max-w-5xl mx-auto px-4">${content}</div>
