@@ -3,10 +3,6 @@
     "title": "Arm Board",
     "products": [
       {
-        "img": "armboard-on-chair.jpg",
-        "title": "Arm Board on Chair"
-      },
-      {
         "img": "ARM-BOARD-SKETCH.jpg",
         "title": "Arm Board Sketch"
       },
@@ -17,6 +13,10 @@
       {
         "img": "arm-board-cover-molds.jpg",
         "title": "Arm Board Cover Molds"
+      },
+      {
+        "img": "armboard-on-chair.jpg",
+        "title": "Arm Board on Chair"
       }
     ]
   },
