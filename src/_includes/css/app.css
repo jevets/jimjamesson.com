@@ -4,7 +4,8 @@ body {
 
 .site-header, .portfolio {
   @apply text-blue-100;
-  @apply bg-blue-900;
+  /* @apply bg-blue-900; */
+  background-color: rgb(29, 46, 83);
   /* background-color: rgb(46, 19, 7); */
   /* background-color: rgb(48, 68, 92); */
   background-image: url(/img/bg-trans.png);
