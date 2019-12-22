@@ -3,7 +3,9 @@ body {
 }
 
 .site-header, .portfolio {
-  @apply text-blue-100 bg-blue-900;
+  @apply text-blue-100;
+  @apply bg-blue-900;
+  /* background-color: rgb(46, 19, 7); */
   /* background-color: rgb(48, 68, 92); */
   background-image: url(/img/bg-trans.png);
   /* background-image: url(/img/bg.png); */
@@ -11,7 +13,7 @@ body {
 }
 
 .content {
-  @apply text-blue-900;
+  /* @apply text-brown-900; */
   p {
     @apply my-6;
     @apply text-lg;

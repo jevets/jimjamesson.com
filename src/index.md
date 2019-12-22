@@ -1,6 +1,6 @@
 ---
 layout: home
-image: /img/jim-jamesson.png
+image: /img/jim-jamesson-next-to-pumphouse.jpg
 ---
 <p class="lead">
   I'm Jim, a <strong>Mechanical Designer</strong> with 50+ years of experience.
