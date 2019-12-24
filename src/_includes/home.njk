@@ -20,9 +20,20 @@ layout: layout
   <div class="container px-4 mx-auto">
     {% H2 'my-16 md:text-4xl' %}Product Design Portfolio{% endH2 %}
     {% for category in products %}
-      <div class="mb-16">
+      <div class="mb-16 category">
         {% H3 'my-6 text-2xl' %}{{ category.title }}{% endH3 %}
-        <div class="mt-4 sm:flex sm:justify-center sm:items-center">
+        <div class="category-images">
+          {% for product in category.products %}
+            <div class="category-image-item">
+              <img
+                class="shadow-2xl"
+                src="/img/works/full/{{ product.img }}"
+                alt="{{ product.title if product.title else category.title }}"
+              >
+            </div>
+          {% endfor %}
+        </div>
+        {# <div class="mt-4 sm:flex sm:justify-center sm:items-center">
         {% for product in category.products %}
           <div class="sm:w-auto sm:mr-2 mb-4">
             <img
@@ -32,7 +43,7 @@ layout: layout
             >
           </div>
         {% endfor %}
-        </div>
+        </div> #}
       </div>
     {% endfor %}
   </div>

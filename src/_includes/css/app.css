@@ -23,3 +23,10 @@ body {
     @apply text-2xl;
   }
 }
+
+.category-images {
+  display: grid;
+  @apply mx-auto;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
