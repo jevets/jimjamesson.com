@@ -22,7 +22,7 @@ layout: layout
     {% for category in products %}
       <div class="mb-16 category">
         {% H3 'my-6 text-2xl' %}{{ category.title }}{% endH3 %}
-        <div class="category-images">
+        {# <div class="category-images">
           {% for product in category.products %}
             <div class="category-image-item">
               <img
@@ -32,8 +32,8 @@ layout: layout
               >
             </div>
           {% endfor %}
-        </div>
-        {# <div class="mt-4 sm:flex sm:justify-center sm:items-center">
+        </div> #}
+        <div class="mt-4 sm:flex sm:justify-center sm:items-center">
         {% for product in category.products %}
           <div class="sm:w-auto sm:mr-2 mb-4">
             <img
@@ -43,7 +43,7 @@ layout: layout
             >
           </div>
         {% endfor %}
-        </div> #}
+        </div>
       </div>
     {% endfor %}
   </div>
