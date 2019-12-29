@@ -1,7 +1,7 @@
 ---
 layout: home
 image: /img/jim-jamesson-next-to-pumphouse.jpg
-image_caption: Cordwood pumphouse on geodesic dome complex
+image_caption: Cordwood pump house on geodesic dome complex
 ---
 <p class="lead">
   I'm Jim, a <strong>Mechanical Designer</strong> with 50+ years of experience.
